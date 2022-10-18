@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+}
+section{
+    padding: 2rem 0;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #8E8E8E;
+    border-radius: 15px;
+    width: 1070px;
+    height: 370px;
+}
+.mb{
+    margin-bottom: 60px;
+}
+.img-content, .yellow, .blue{
+    margin: auto;
+    position: relative;
+}
+.small{
+    display: none;
+}
+.yellow::after{
+    content:'Круглый год';
+    position: absolute;
+    background-color: #FFD83C;
+    width: 154px;
+    height: 42px;
+    left: 0;
+    top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #323232;
+}
+.blue::after{
+    content:'Новинка';
+    position: absolute;
+    background-color: #099CE8;
+    width: 154px;
+    height: 42px;
+    left: 0;
+    top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #fff;
+}
+.txt-content{
+    padding: 20px;
+    height: 100%;
+}
+h3{
+    font-size: 26px;
+    line-height: 34px;
+}
+.time-limit{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9E9E9E;
+}
+.time-limit::before{
+    content:"";
+    display: inline-block;
+    background-image: url('./img/clock-circular-outline.png');
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+p{
+    font-size: 18px;
+    line-height: 40px;
+}
+p::before{
+    content:'';
+    background-image: url('./img/check-mark.png');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.last{
+    display: inline;
+}
+.schedule{
+    text-decoration: none;
+    border: none;
+    background: #C5DCFF;
+    border-radius: 11px;
+    padding: 4px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+}
+#hide{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.price-info{
+    display: flex;
+    margin-top: 10px;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.price-main{
+    font-size: 36px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.info{
+    text-decoration: none;
+    border: none;
+    background: #FFD83C;
+    border-radius: 23px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 16px 45px;
+    margin-left: 25px;
+}
+@media only screen and (max-width: 600px){
+    section{
+        padding: 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.5px solid #8E8E8E;
+        border-radius: 15px;
+        width: 340px;
+        height: 655px;
+        margin: 30px 0px 20px 0px;
+    }    
+    .big{
+        display: none;
+    }
+    .img-content, .yellow, .blue{
+        margin: 0 auto;
+    }
+
+    .yellow::after{
+        width: 99px;
+        height: 35px;
+        left: 0;
+        top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .blue::after{
+        width: 99px;
+        height: 35px;
+        left: 0;
+        top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-size: 12px;
+    }    
+    .small{
+        display: block;
+        margin: 0 auto;
+    }
+    h3{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .time-limit{
+        font-size: 12px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    p::before{
+        margin-right: 20px;
+    }
+    .last{
+        display: block;
+    }
+    .schedule{
+        padding: 4px 16px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .price-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .prices{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .price-main{
+        font-size: 30px;
+        margin: 0;
+    }
+    .price{
+        display: none;
+    }
+    .info{
+        padding: 12px 30px;
+        margin: 15px 0;
+    }
+}
